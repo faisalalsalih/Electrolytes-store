@@ -41,7 +41,7 @@
 
 
 .details{
-    color: #FFFFFF;
+    color: #c4bfbf;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,4 +76,13 @@
 .logo p{
     font-style: bold;
     font-size: 22px;
+}
+
+
+.bigger{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(6, 157, 157);
+    z-index: 3;
+    position: absolute;
 }
