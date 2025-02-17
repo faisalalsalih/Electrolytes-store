@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    position: relative;
+    z-index: 1;
+}
+
+
+.last{
+    width: 20%;
+    height: 90%;
+    background-color: hsl(120, 91%, 22%);
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
