@@ -123,3 +123,9 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
+#details, #last, #big2-img {
+    transition: all 400ms ease-in-out;
+}
