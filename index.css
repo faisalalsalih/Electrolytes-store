@@ -55,8 +55,9 @@
 .navbar{
     width: 80%;
     display: flex;
-    gap: 500px;
+    gap: 300px;
     padding: 20px;
+    z-index: 5;
 }
 
 .links ul{
@@ -128,4 +129,35 @@
 
 #details, #last, #big2-img {
     transition: all 400ms ease-in-out;
+}
+
+
+
+/* Responsive the navbar and hero section  */
+@media only screen and (max-width:1270px){
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width:1256px){
+    .big2{
+        order: 1;
+        left: 0;
+    }
+    .big1{
+        order: 2;
+        position: absolute;
+        bottom: 0;
+    }
+    #hero{
+        height: 1200px;
+        background-color: blue;
+    }
+    #last{
+        height: fit-content;
+    }
 }
