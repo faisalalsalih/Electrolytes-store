@@ -132,6 +132,10 @@
 }
 
 
+.image3{
+    display: none;
+}
+
 
 /* Responsive the navbar and hero section  */
 @media only screen and (max-width:1270px){
@@ -145,19 +149,109 @@
 
 @media only screen and (max-width:1256px){
     .big2{
-        order: 1;
         left: 0;
     }
     .big1{
-        order: 2;
         position: absolute;
         bottom: 0;
     }
     #hero{
         height: 1200px;
-        background-color: blue;
+        /* background-color: blue; */
     }
     #last{
         height: fit-content;
+    }
+}
+
+
+
+@media only screen and (max-width:1120px){
+    #last{
+        width: 30%;
+    }
+}
+
+
+@media only screen and (max-width:830px){
+    #details{
+        display: none;
+    }
+    #hero .last .image3{
+        display: block;
+    }
+    #hero .last .image2{
+        display: none;
+    }
+    #last{
+        background-color: transparent;
+    }
+}
+
+
+@media only screen and (max-width:716px){
+    #big2-img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+
+@media only screen and (max-width:640px){
+    .links ul{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+@media only screen and (max-width:670px){
+    .big1{
+        padding-left: 0;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 100px;
+    }
+    #big2-img{
+        width: 350px;
+        height: 350px;
+        margin-left: 50px;
+    }
+    #hero{
+        height: 1600px;
+    }
+
+}
+
+
+@media only screen and (max-width:610px){
+    .big1{
+        padding: 20px;
+    }
+    #big2-img{
+        margin-top: 40px;
+    }
+}
+
+
+@media only screen and (max-width:430px){
+    .big1{
+        padding: 8px;
+    }
+}
+
+
+@media only screen and (max-width:540px){
+    .dots{
+        gap: 20px;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+    #big2-img{
+        margin-left: 30px;
     }
 }
