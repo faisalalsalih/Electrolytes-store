@@ -274,3 +274,52 @@
     align-items: center;
     gap: 100px;
 }
+
+
+/* Responsive the catalog  */
+
+
+@media only screen and (max-width:1012px){
+    .catalog{
+        gap: 70px;
+    }
+}
+
+
+@media only screen and (max-width:940px){
+    .catalog{
+        gap: 50px;
+    }
+}
+
+
+
+@media only screen and (max-width:850px){
+    .catalog{
+        gap: 30px;
+    }
+}
+
+
+@media only screen and (max-width:720px){
+    .catalog{
+        gap: 20px;
+    }
+}
+
+
+@media only screen and (max-width:680px){
+    .catalog{
+        gap: 10px;
+    }
+}
+
+
+@media only screen and (max-width:620px){
+    .catalog{
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px;
+        gap: 20px;
+    }
+}
