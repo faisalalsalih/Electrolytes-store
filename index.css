@@ -131,11 +131,13 @@
     transition: all 400ms ease-in-out;
 }
 
-
 .image3{
     display: none;
 }
 
+.image4{
+    display: none;
+}
 
 /* Responsive the navbar and hero section  */
 @media only screen and (max-width:1270px){

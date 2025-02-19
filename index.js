@@ -53,8 +53,10 @@ function changeContent(){
     var detailsdev = document.getElementById("details");
     detailsdev.innerHTML = content[currentIndex];
 
+    if(window.innerWidth > 830){
     var last = document.getElementById("last");
     last.style.backgroundColor = color[currentIndex];
+    }
 
     var big2image = document.getElementById("big2-img");
     big2image.src = images[currentIndex];
@@ -89,8 +91,10 @@ function reverseContent() {
     var detailsdev = document.getElementById("details");
     detailsdev.innerHTML = content[currentIndex];
 
+    if(window.innerWidth > 830){
     var last = document.getElementById("last");
     last.style.backgroundColor = rcolor[currentIndex];
+    }
 
     var big2image = document.getElementById("big2-img");
     big2image.src = rimages[currentIndex];
@@ -119,4 +123,30 @@ arrowright.onclick = () => {
 
 arrowleft.onclick = () => {
     reverseContent();
+}
+
+
+
+
+// Code For Menu Bar
+
+
+var menubar = document.getElementById("image");
+var cross = document.getElementById("cross");
+
+menubar.onclick = () => {
+    details.style.display = 'block';
+    details.style.color = 'black';
+    details.style.margin = '8px';
+    menubar.style.display = 'none';
+    cross.style.display = 'block';
+    details.style.position = 'absolute';
+    details.style.right = '0';
+}
+
+
+cross.onclick = () => {
+    details.style.display = 'none';
+    menubar.style.display = 'block';
+    cross.style.display = 'none';
 }
