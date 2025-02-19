@@ -323,3 +323,13 @@
         gap: 20px;
     }
 }
+
+
+
+
+/* About us section start from here */
+#about{
+    width: 100%;
+    height: 100vh;
+    background-color: #497d6e;
+}
