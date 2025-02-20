@@ -412,4 +412,121 @@
     .bigdo .divs{
         width: 100%;
     }
-} 
+}
+
+
+
+/* Product section starts from here */
+
+#product{
+    width: 100%;
+    height: 100vh;
+    background-color: #497d6e;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.pic{
+    width: 40%;
+    height: 90%;
+    border: 2px solid black;
+    position: relative;
+}
+
+.creds{
+    width: 40%;
+    height: 90%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.pic img{
+    position: absolute;
+    z-index: 1;
+}
+
+.card{
+    width: 170px;
+    height: 200px;
+    background-color: rgb(255, 241, 241);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    margin: 60px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.picture{
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to left, silver, white);
+    background-image: linear-gradient(to bottom, silver, white);
+}
+
+.picture img{
+    margin-left: 30px;
+}
+
+.upicture{
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.upicture p{
+    font-size: 14px;
+}
+
+.Flavours{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 4px;
+    background: linear-gradient(to right, silver, rgb(59, 142, 91));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.foot{
+    width: 100%;
+    height: 30%;
+    /* background-color: blue; */
+    display: flex;
+    gap: 50px;
+    padding: 2px;
+}
+.pehla{
+    width: 50%;
+    height: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.dosra{
+    width: 50%;
+    height: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.golo{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #497d6e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dollar{
+    font-size: 14px;
+}
+
