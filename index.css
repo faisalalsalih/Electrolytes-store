@@ -357,7 +357,8 @@
     width: 300px;
     height: 300px;
     border: 2px solid black;
-    background-color: hsl(0, 0%, 93%);
+    background-image: linear-gradient(to left, silver, white);
+    background-image: linear-gradient(to bottom, silver, white);
     color: black;
     margin-top: 10px;
 }
@@ -420,8 +421,8 @@
 
 #product{
     width: 100%;
-    height: 100vh;
-    background-color: #497d6e;
+    height: fit-content;
+    /* background-color: #497d6e; */
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -429,15 +430,17 @@
 
 .pic{
     width: 40%;
-    height: 90%;
-    border: 2px solid black;
+    height: 600px;
+    /* border: 2px solid black; */
     position: relative;
+    background-image: linear-gradient(to left, silver, white);
+    background-image: linear-gradient(to bottom, silver, white);
 }
 
 .creds{
     width: 40%;
-    height: 100%;
-    border: 2px solid black;
+    height: 800px;
+    /* border: 2px solid black; */
     overflow: hidden;
 }
 
@@ -533,15 +536,15 @@
 .firstone{
     width: 100%;
     height: 40%;
-    background-color: pink;
-    border: 2px solid black;
+    /* background-color: pink; */
+    /* border: 2px solid black; */
     padding: 10px;
 }
 .secondone{
     width: 100%;
     height: 30%;
-    background-color: blueviolet;
-    border: 2px solid black;
+    /* background-color: blueviolet; */
+    /* border: 2px solid black; */
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -550,8 +553,8 @@
 .thirdone{
     width: 100%;
     height: 30%;
-    background-color: blue;
-    border: 2px solid black;
+    /* background-color: blue; */
+    /* border: 2px solid black; */
     padding: 10px;
 }
 
@@ -623,4 +626,96 @@
 
 .listi ul>li{
     margin-bottom: 40px;
+}
+
+.seven{
+    transition: all 400ms ease-in-out;
+}
+
+/* Responsive the product Side Here */
+
+@media only screen and (max-width:1120px){
+    #product{
+        flex-direction: column;
+        align-items: center;
+    }
+    .creds{
+        width: 100%;
+    }
+    .firstone{
+        text-align: center;
+    }
+    .pic{
+        width: 100%;
+    }
+    .pic .seven{
+        top: 10%;
+        left: 50%;
+        transform: translate(-20%);
+    }
+}
+
+
+@media only screen and (max-width:800px){
+    .pic .seven{
+        top: 10%;
+        left: 30%;
+        transform: translate(-10%);
+    }
+}
+
+
+@media only screen and (max-width:660px){
+    .pic .seven{
+        top: 10%;
+        left: 20%;
+        transform: translate(-10%);
+    }
+}
+
+
+@media only screen and (max-width:580px){
+    .pic .seven{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+@media only screen and (max-width:500px){
+    .pic .seven{
+        top: 10%;
+        left: 10%;
+    }
+    .card{
+        top: 50%;
+        left: 10%;
+    }
+}
+
+
+@media only screen and (max-width:450px){
+    .listo{
+        flex-direction: column;
+        gap: 4px;
+    }
+    .secondone{
+        height: fit-content;
+        margin-top: 0px;
+    }
+    .listi{
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .listi1 ul>li{
+        margin-bottom: 5px;
+    }
+    .listi2 ul>li{
+        margin-bottom: 5px;
+    }
+    .food{
+        text-align: center;
+    }
 }
