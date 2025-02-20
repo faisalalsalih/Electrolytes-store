@@ -330,8 +330,8 @@
 /* About us section start from here */
 #about{
     width: 100%;
-    height: 100vh;
-    background-color: #497d6e;
+    height: fit-content;
+    /* background-color: #497d6e; */
     padding: 30px;
 }
 
@@ -346,7 +346,7 @@
 .bigdo{
     width: 100%;
     height: fit-content;
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -379,15 +379,37 @@
     margin-bottom: 50px;
 }
 
+.text{
+    margin-top: 60px;
+}
+
 
 /* Responsive of the About us side here */
 
 @media only screen and (max-width:1050px){
-    .txt h1{
+    .txt{
+        text-align: center;
+    }
+    .text p{
         text-align: center;
     }
 }
 
 
 
-@media only screen and (max-width) 
+@media only screen and (max-width:830px){
+    .bigone{
+        flex-direction: column;
+        gap: 6px;
+    }
+    .text{
+        margin-top: 30px;
+    }
+    .bigdo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bigdo .divs{
+        width: 100%;
+    }
+} 
