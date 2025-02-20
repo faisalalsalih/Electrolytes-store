@@ -350,6 +350,7 @@
     display: flex;
     justify-content: center;
     gap: 40px;
+    margin-top: 40px;
 }
 
 .divs{
@@ -380,3 +381,13 @@
 
 
 /* Responsive of the About us side here */
+
+@media only screen and (max-width:1050px){
+    .txt h1{
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (max-width) 
