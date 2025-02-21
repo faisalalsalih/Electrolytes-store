@@ -433,13 +433,13 @@
     height: 600px;
     /* border: 2px solid black; */
     position: relative;
-    background-image: linear-gradient(to left, silver, white);
-    background-image: linear-gradient(to bottom, silver, white);
+    /* background-image: linear-gradient(to left, silver, white);
+    background-image: linear-gradient(to bottom, silver, white); */
 }
 
 .creds{
     width: 40%;
-    height: 800px;
+    height: fit-content;
     /* border: 2px solid black; */
     overflow: hidden;
 }
@@ -535,7 +535,7 @@
 
 .firstone{
     width: 100%;
-    height: 40%;
+    height: fit-content;
     /* background-color: pink; */
     /* border: 2px solid black; */
     padding: 10px;
@@ -546,7 +546,7 @@
     /* background-color: blueviolet; */
     /* border: 2px solid black; */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 10px;
 }
 
@@ -566,15 +566,16 @@
 }
 
 .long{
-    font-size: 32px;
+    font-size: 42px;
     margin-bottom: 30px;
     color: #497d6e;
     
 }
 
 .desc{
-    font-size: 12px;
+    font-size: 16px;
     color: #497d6e;
+    margin-top: 50px;
 }
 
 
@@ -615,11 +616,12 @@
 
 .food{
     font-size: 32px;
+    /* margin-left: 80px; */
 }
 
 .listi{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 50px;
     margin-top: 30px;
 }
@@ -636,6 +638,14 @@
 
 @media only screen and (max-width:1120px){
     #product{
+        flex-direction: column;
+        align-items: center;
+    }
+    .secondone{
+        justify-content: center;
+    }
+    .thirdone{
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -681,6 +691,15 @@
     }
 }
 
+@media only screen and (max-width:550px){
+    .desc{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .long{
+        font-size: 32px;
+    }
+}
 
 @media only screen and (max-width:500px){
     .pic .seven{
