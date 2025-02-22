@@ -150,3 +150,37 @@ cross.onclick = () => {
     menubar.style.display = 'block';
     cross.style.display = 'none';
 }
+
+
+// Code For Listing The Product 
+const imgs = [
+    ['assets/img2.png', 'assets/img3.png', 'assets/img5.png'],
+    ['assets/img7.png', 'assets/img5.png', 'assets/img2.png'],
+    ['assets/img4.png', 'assets/img8.png', 'assets/img6.png']
+];
+
+let current = 0;
+
+function updateImages() {
+    const slides = document.querySelectorAll('.middle .half1 img');
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].src = imgs[current][i];
+    }
+}
+
+document.getElementById("next").addEventListener('click', () => {
+    current = (current + 1) % imgs.length;
+    updateImages();
+    let circles = document.getElementsByClassName('circle');
+    circles[current].classList.remove("active");
+    current = (current + 1) % circles.length;
+    circles[current].classList.add("active");
+});
+
+document.getElementById("prev").addEventListener('click', () => {
+    current = (current - 1 + imgs.length) % imgs.length;
+    updateImages();
+});
+
+// Initialize the slider
+updateImages();
