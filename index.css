@@ -1169,3 +1169,27 @@
         /* gap: 10px; */
     }
 }
+
+
+/* Footer Section Starts from here */
+
+#footer{
+    width: 100%;
+    height: 1000px;
+    background-color: #03563e;
+    color: whitesmoke;
+}
+
+.mail{
+    width: 300px;
+    height: 200px;
+    height: fit-content;
+    background-color: whitesmoke;
+}
+
+.mail input{
+    border: none;
+    outline: none;
+    padding: 20px;
+    background-color: rgb(255, 253, 253);
+}
