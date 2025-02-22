@@ -1162,8 +1162,10 @@
 }
 
 
-@media only screen and (max-width:455px){
-    .newsletter{
-        padding: 20px;
+
+@media only screen and (max-width:430px){
+    .input{
+        width: 350px;
+        /* gap: 10px; */
     }
 }
