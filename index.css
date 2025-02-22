@@ -1081,3 +1081,55 @@
         width: 100%;
     }
 }
+
+
+
+
+/* News letter Section  Starts From Here*/
+
+
+.newsletter{
+    width: 100%;
+    height: fit-content;
+    background-color: #068f6a;
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    padding-top: 20px;
+}
+
+.input{
+    width: 500px;
+    height: 50px;
+    /* border: 2px solid black; */
+    border-radius: 26px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #94aea6;
+}
+
+.input input{
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    outline: none;
+}
+.input input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+.input button{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 26px;
+    background-color: rgb(249, 28, 28);
+    cursor: pointer;
+}
