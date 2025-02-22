@@ -874,3 +874,22 @@
     justify-content: space-between;
     padding: 30px;
 }
+
+
+.circles.active{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.doto{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(223, 215, 215, 0.927);
+}

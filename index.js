@@ -155,14 +155,26 @@ cross.onclick = () => {
 // Code For Listing The Product 
 const imgs = [
     ['assets/img2.png', 'assets/img3.png', 'assets/img5.png'],
-    ['assets/img7.png', 'assets/img5.png', 'assets/img2.png'],
-    ['assets/img4.png', 'assets/img8.png', 'assets/img6.png']
+    ['assets/img7.png', 'assets/img6.png', 'assets/img2.png'],
+    ['assets/img4.png', 'assets/img8.png', 'assets/img6.png'],
+    ['assets/img3.png', 'assets/img5.png', 'assets/img7.png']
 ];
 
 let current = 0;
 
 function updateImages() {
     const slides = document.querySelectorAll('.middle .half1 img');
+    let circles = document.getElementsByClassName('circles');
+    
+    // Remove active class from all circles
+    for (let i = 0; i < circles.length; i++) {
+        circles[i].classList.remove("active");
+    }
+    
+    // Add active class to the current circle
+    circles[current].classList.add("active");
+    
+    // Update the source of each image
     for (let i = 0; i < slides.length; i++) {
         slides[i].src = imgs[current][i];
     }
@@ -171,10 +183,6 @@ function updateImages() {
 document.getElementById("next").addEventListener('click', () => {
     current = (current + 1) % imgs.length;
     updateImages();
-    let circles = document.getElementsByClassName('circle');
-    circles[current].classList.remove("active");
-    current = (current + 1) % circles.length;
-    circles[current].classList.add("active");
 });
 
 document.getElementById("prev").addEventListener('click', () => {
