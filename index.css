@@ -893,3 +893,39 @@
     border-radius: 50%;
     background-color: rgba(223, 215, 215, 0.927);
 }
+
+
+
+/* Responsive the Listing Side Here */
+
+
+@media only screen and (max-width:990px){
+    .middle{
+        gap: 50px;
+    }
+}
+
+
+@media only screen and (max-width:900px){
+    .middle{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #listing{
+        height: fit-content;
+    }
+
+    .middle1{
+        width: 100%;
+    }
+    .middle2{
+        width: 100%;
+    }
+    .middle3{
+        width: 100%;
+    }
+    .pad{
+        text-align: center;
+    }
+}
