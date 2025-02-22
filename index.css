@@ -928,4 +928,156 @@
     .pad{
         text-align: center;
     }
+    .half21{
+        justify-content: center;
+        gap: 100px;
+    }
+    .half22{
+        text-align: center;
+    }
+}
+
+
+/* ================== The Listing Section Ends Here ============ */
+
+
+/* ================= Product Section Starts From Here ================== */
+
+#Testimonials{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(254, 254, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.border{
+    width: 400px;
+    height: fit-content;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: hsla(135, 100%, 88%, 0.66);
+}
+
+.opinion{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('assets/li\ shang\ aesthetic\ _\ mulan.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.profile2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('assets/2ab8733f-c69e-4993-90bd-773715403b06.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.profile3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('assets/1dc829ce-db7e-46a2-b0ed-53f4c89458a3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.profile4{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('assets/e95c7bd7-70de-4e60-84be-ea84a043566d.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.cham{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.new{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.customer1{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.customer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.test{
+    font-size: 32px;
+    margin-top: 20px;
+}
+.check{
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.ita{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.description{
+    text-align: center;
+}
+
+.dabi{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+/* Responsive the testimonials section here */
+
+
+@media only screen and (max-width:1000px){
+    .dabi{
+        gap: 50px;
+    }
+}
+
+
+@media only screen and (max-width:920px){
+    .dabi{
+        gap: 30px;
+    }
+}
+
+
+@media only screen and (max-width:870px){
+    .dabi{
+        flex-direction: column;
+    }
+    .border{
+        width: 100%;
+    }
 }
