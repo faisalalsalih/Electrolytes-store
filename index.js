@@ -74,10 +74,12 @@ function changeContent(){
         arrowright.style.visibility = 'visible';
     }
 
-    if (currentIndex <= 0) {
-        arrowleft.style.visibility = 'hidden';
-    } else {
+    if (currentIndex >= 0) {
         arrowleft.style.visibility = 'visible';
+        // arrowleft.style.display = 'none';
+    } else{
+        arrowleft.style.visibility = 'hidden';
+        // arrowleft.style.display = 'block';
     }
 
 };
