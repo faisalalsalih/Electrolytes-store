@@ -1090,7 +1090,7 @@
 
 .newsletter{
     width: 100%;
-    height: 180px;
+    height: 200px;
     background-color: #068f6a;
     display: flex;
     justify-content: center;
@@ -1211,6 +1211,7 @@
 
 .upper ul>li{
     list-style-type: none;
+    cursor: pointer;
 }
 
 .upper1{
@@ -1258,4 +1259,18 @@
     justify-content: center;
     margin-top: 60px;
     padding-bottom: 10px;
+}
+
+.dota li:first-child{
+    font-size: 20px;
+}
+
+
+
+/* responsive The Footer Section Here */
+
+@media only screen and (max-width:990px){
+    .upper{
+        flex-wrap: wrap;
+    }
 }
