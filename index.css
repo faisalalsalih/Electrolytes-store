@@ -1274,3 +1274,61 @@
         flex-wrap: wrap;
     }
 }
+
+
+
+
+#heading1{
+    margin-top: 20px;
+    font-size: 50px;
+}
+.page1{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+@media (max-width:500px){
+    #big2-img{
+        width: 250px;
+        height: 250px;
+    }
+    #big2{
+        top: 400px;
+    }
+    .big1{
+        margin-left: -50px;
+    }
+    #heading1{
+        font-size: 38px;
+    }
+    .bigger{
+        height: 80%;
+    }
+    .direction{
+        justify-content: center;
+        gap: 20px;
+    }   
+}
+
+
+
+
+@media (max-width:450px){
+    #heading1{
+        text-align: center;
+        font-size: 32px;
+    }
+    .page1{
+        text-align: center;
+        font-size: 14px;
+    }
+    .big1 button{
+        margin-left: 120px;
+    }
+    .newsletter{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 450px;
+    }
+}
